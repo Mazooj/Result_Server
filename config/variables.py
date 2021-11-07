@@ -23,7 +23,7 @@ def getId(number):
     file = open('data2.json', 'r')
     data = json.load(file)
     try:
-        return data[number]['auth_id']
+        return data[number]['authy_id']
     except Exception:
         return None
 
