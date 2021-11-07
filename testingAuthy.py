@@ -10,14 +10,12 @@ def send_otp(authy_id):
         print(sms.content)
 
 
-
 def verify_otp(authy_id, token_id):
     # Your API key from twilio.com/console/authy/applications
     authy_api = AuthyApiClient('KkwniIQT73oh3ua6fnmc8eWQxsHA97S9')
     verification = authy_api.tokens.verify(authy_id, token=token_id)
     print(verification.ok())
     return verification.ok()
-
 
 
 def add_user(email, phone):
