@@ -3,7 +3,7 @@ from authy.api import AuthyApiClient
 
 def send_otp(authy_id):
     # Your API key from twilio.com/console/authy/applications
-    authy_api = AuthyApiClient('mTl20S7LM389QOZANRuZNM3WWH1IgJJV')
+    authy_api = AuthyApiClient('KkwniIQT73oh3ua6fnmc8eWQxsHA97S9')
     sms = authy_api.users.request_sms(authy_id, {'force': True})
 
     if sms.ok():
@@ -13,7 +13,7 @@ def send_otp(authy_id):
 
 def verify_otp(authy_id, token_id):
     # Your API key from twilio.com/console/authy/applications
-    authy_api = AuthyApiClient('mTl20S7LM389QOZANRuZNM3WWH1IgJJV')
+    authy_api = AuthyApiClient('KkwniIQT73oh3ua6fnmc8eWQxsHA97S9')
     verification = authy_api.tokens.verify(authy_id, token=token_id)
     print(verification.ok())
     return verification.ok()
