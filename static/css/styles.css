@@ -1,0 +1,28 @@
+.head {
+    text-align: center;
+    align-self: center;
+    align-content: center;
+}
+
+.button{
+    alignment: center;
+    flex-basis: auto;
+    padding: 8px;
+}
+.table{
+    margin: 1rem;
+    background-color: aqua;
+    border-spacing: 0;
+}
+
+.table__row:nth-child(even){
+    background-color: burlywood;
+}
+
+.table__header {
+    text-align: left;
+}
+
+.table__cell{
+    padding: 8px;
+}
