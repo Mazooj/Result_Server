@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body>
+    <table class="table">
+      <tr class="table__header">
+          {% for heads in headings %}
+        <th class="table__cell">{{heads}}</th>
+          {% endfor %}
+      </tr>
+      <tr class="table__row">
+          {% for data in datas %}
+        <td class="table__cell">{{data}}</td>
+          {% endfor %}
+      </tr>
+
+
+    </table>
+
+</body>
+</html>
