@@ -1,1 +1,1 @@
-web: uvicorn main:app --reload --port 3000
+web: uvicorn main:app --port 3000
