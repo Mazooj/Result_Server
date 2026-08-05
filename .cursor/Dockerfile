@@ -5,7 +5,7 @@ RUN apt-get update \
         git \
         curl \
         sudo \
-        mysql-server \
+        mariadb-server \
         default-libmysqlclient-dev \
         pkg-config \
         python3-venv \

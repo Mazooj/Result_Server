@@ -2,7 +2,7 @@
 set -euo pipefail
 
 if ! sudo mysql -e "SELECT 1" >/dev/null 2>&1; then
-  sudo service mysql start
+  sudo service mariadb start 2>/dev/null || sudo service mysql start
 fi
 
 sudo mysql -e "
