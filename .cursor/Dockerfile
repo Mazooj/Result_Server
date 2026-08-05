@@ -8,6 +8,7 @@ RUN apt-get update \
         mysql-server \
         default-libmysqlclient-dev \
         pkg-config \
+        python3-venv \
     && rm -rf /var/lib/apt/lists/*
 
 RUN useradd -m -s /bin/bash ubuntu 2>/dev/null || true \
